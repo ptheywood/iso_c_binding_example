@@ -8,12 +8,12 @@ OBJECTS = \
 	main.o
 
 
-CC := g++
-CFLAGS := -o3
-FC := f95
+CC := icpc
+CFLAGS := 
+FC := ifort
 FFLAGS := 
 LINKER := $(FC)
-LFLAGS :=
+LFLAGS := -lstdc++
 
 all: $(TARGET)
 
